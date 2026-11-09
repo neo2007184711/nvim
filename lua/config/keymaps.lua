@@ -18,3 +18,6 @@ vim.api.nvim_create_autocmd("FileType", {
     end, { buffer = event.buf, desc = "Compile C/C++ source" })
   end,
 })
+
+vim.keymap.set("i", "<C-a>", "<Esc>I", { desc = "Move to beginning of line" })
+vim.keymap.set("i", "<C-e>", "<Esc>A", { desc = "Move to end of line" })
