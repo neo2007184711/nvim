@@ -21,3 +21,6 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.keymap.set("i", "<C-a>", "<Esc>I", { desc = "Move to beginning of line" })
 vim.keymap.set("i", "<C-e>", "<Esc>A", { desc = "Move to end of line" })
+vim.keymap.set("n", "<A-/>", "gcc", { remap = true, desc = "Toggle comment line" })
+vim.keymap.set("v", "<A-/>", "gc", { remap = true, desc = "Toggel comment selection" })
+vim.keymap.set("i", "<A-/>", "<Esc>gcca", { remap = true, desc = "Toggel comment line" })
